@@ -1,0 +1,157 @@
+#! ---------------------------------------------------------------
+#! Site Configs
+#! ---------------------------------------------------------------
+site:
+  subtitle: FLA
+  author: NoleHuan
+  nick: The Doctrine of the Mean
+  description: The true nature of a heart is seen in its response to the unattractive.
+  language: en
+  multi_language: true
+  logo: /img/tennis_logo.svg
+  avatar: /img/tennis_logo.svg
+  beian:
+    number: ""
+    link: ''
+  started_date: 2023-11-17
+
+mathjax:
+  enable: true
+  # cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+#! ---------------------------------------------------------------
+#! Highlighter Shiki
+#! ---------------------------------------------------------------
+shiki:
+  enable: true
+  theme: github-light
+  externalTheme: github-light
+  backgroundColor: '#1a1a1a'
+
+#! ---------------------------------------------------------------
+#! Menu Configs
+#! ---------------------------------------------------------------
+menu:
+  Tags: false
+  Archives: false
+  Links: false
+  About: false
+  Intro:
+    name: 'Intro'
+    i18n:
+      en: 'Intro'
+      zh-CN: '简介'
+    path: '/page/intro/'
+  Daily:
+    name: 'Daily'
+    i18n:
+      en: 'Daily'
+      zh-CN: '日常'
+    path: '/page/daily/'
+  Message:
+    name: 'Message'
+    i18n:
+      en: 'Message'
+      zh-CN: '留言'
+    path: '/page/message/'
+  # Learning:
+  #   name: 'Learning'
+  #   i18n:
+  #     en: 'Learning'
+  #     zh-CN: '学习'
+  #   children:
+  #     machine:
+  #       name: 'Machine'
+  #       i18n:
+  #         en: 'Machine'
+  #         zh-CN: '机器学习'
+  #       path: ''
+  #     deep:
+  #       name: 'Deep'
+  #       i18n:
+  #         en: 'Deep'
+  #         zh-CN: '深度学习'
+  #       path: ''
+
+#! ---------------------------------------------------------------
+#! Theme Config
+#! ---------------------------------------------------------------
+theme:
+  dark_mode: auto
+  profile_shape: diamond # support `circle`, `diamond`, `rounded`
+  feature: true
+  gradient:
+    color_1: '#24c6dc'
+    color_2: '#5433ff'
+    color_3: '#ff0099'
+
+#! ---------------------------------------------------------------
+#! Social Configs
+#! ---------------------------------------------------------------
+socials:
+  github: 'https://github.com/nolehuan'
+  weibo: 'https://weibo.com/u/5948495997'
+
+#! ---------------------------------------------------------------
+#! Plugins
+#! ---------------------------------------------------------------
+# Valine comment plugin (recommended!)
+# see https://valine.js.org/quickstart.html
+valine:
+  enable: true
+  app_id: T8B6cLa9LW1KUMUxHMaP2djk-gzGzoHsz
+  app_key: LbK9tdM1BezlLV8CSEOdKkOx
+  avatar: '/img/tennis_logo.svg'
+  placeholder: Leave your thoughts behind~
+  visitor: true
+  lang: en
+  avatarForce: false
+  meta: ['nick', 'mail']
+  requiredFields: []
+  admin: 'Nole'
+  recentComment: true
+
+#! ---------------------------------------------------------------
+#! Enable Aurora Bot Dia
+#! ---------------------------------------------------------------
+aurora_bot:
+  enable: true
+  locale: en
+  bot_type: dia
+  tips:
+    messages:
+      - Hi
+      - 嘿嘿嘿
+      - showQuote
+    console: Hi
+    copy: 你都复制了些什么呀
+    visibility_change: 欢迎回来
+    welcome:
+      '24': 这么晚还不睡，明天起得来嘛
+    referrer:
+      other: <span>「[PLACEHOLDER]」</span>
+    mouseover:
+      - selector: '#Aurora-Dia'
+        text:
+          - 你好呀 O.O
+          - 嘿嘿嘿
+      - selector: "[data-menu='Home']"
+        text:
+          - 点击前往首页
+    click:
+      - selector: '.veditor'
+        text:
+          - 留个言吧
+    events:
+      - date: 01/01
+        text: '新年好'
+
+#! ---------------------------------------------------------------
+#! Site Meta Configs
+#! ---------------------------------------------------------------
+site_meta:
+  cdn: en
+  favicon:
+  description: 'The Doctrine of the Mean'
+  keywords: 'Cpp'
+  author: 'NoleHuan'

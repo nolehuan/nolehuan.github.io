@@ -1,0 +1,1 @@
+../../daily/index.md
